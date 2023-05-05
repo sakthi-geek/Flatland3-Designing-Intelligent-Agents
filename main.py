@@ -1,30 +1,28 @@
-import os
-import json
-import time
 import argparse
-import numpy as np
-import matplotlib.pyplot as plt
-from flatland_3_pettingzoo_env import Flatland3PettingZoo
-from pettingzoo.utils import wrappers
-from stable_baselines3 import DQN, PPO, A2C
-from stable_baselines3.common.vec_env import DummyVecEnv
-from stable_baselines3.common.env_checker import check_env
-from stable_baselines3.common.callbacks import BaseCallback
-from pettingzoo.utils.to_parallel import from_parallel_wrapper
-from stable_baselines3.common.callbacks import BaseCallback
-from flatland.utils.rendertools import RenderTool
+import json
+import os
+import time
 
+import matplotlib.pyplot as plt
+import numpy as np
+from flatland.utils.rendertools import RenderTool
+from pettingzoo.utils import wrappers
+from pettingzoo.utils.to_parallel import from_parallel_wrapper
+from stable_baselines3 import A2C, DQN, PPO
+from stable_baselines3.common.callbacks import BaseCallback
+from stable_baselines3.common.env_checker import check_env
+from stable_baselines3.common.vec_env import DummyVecEnv
+
+from flatland_3_pettingzoo_env import Flatland3PettingZoo
 from helper import get_model_class
 
-
-
-from stable_baselines3.common.results_plotter import load_results, ts2xy
-from stable_baselines3.common.monitor import Monitor
-from stable_baselines3.common.evaluation import evaluate_policy
-from stable_baselines3.common.env_util import make_vec_env
-from stable_baselines3.common.vec_env import VecVideoRecorder, VecNormalize
-from stable_baselines3.common.utils import set_random_seed
-from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
+# from stable_baselines3.common.results_plotter import load_results, ts2xy
+# from stable_baselines3.common.monitor import Monitor
+# from stable_baselines3.common.evaluation import evaluate_policy
+# from stable_baselines3.common.env_util import make_vec_env
+# from stable_baselines3.common.vec_env import VecVideoRecorder, VecNormalize
+# from stable_baselines3.common.utils import set_random_seed
+# from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
 
 
 #--- Parameters ------
