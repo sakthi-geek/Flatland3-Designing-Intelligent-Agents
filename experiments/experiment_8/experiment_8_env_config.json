@@ -1,0 +1,15 @@
+{
+  "seed": 39,
+  "width": 35,
+  "height": 35,
+  "grid_mode": false,
+  "obs_type": "tree",
+  "max_num_cities": 4,
+  "max_rails_between_cities": 4,
+  "max_rail_pairs_in_city": 4,
+  "n_agents": 10,
+  "env_setting": "single",
+  "num_envs": 1,
+  "n_agents_per_env": 10,
+  "predictor": "shortest_path"
+}

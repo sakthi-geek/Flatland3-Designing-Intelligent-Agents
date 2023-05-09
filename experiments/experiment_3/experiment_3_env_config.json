@@ -1,0 +1,21 @@
+{
+  "seed": 39,
+  "width": 30,
+  "height": 30,
+  "grid_mode": false,
+  "obs_type": "tree",
+  "max_tree_depth": 2,
+  "max_num_cities": 2,
+  "max_rails_between_cities": 2,
+  "max_rail_pairs_in_city": 2,
+  "n_agents": 4,
+  "env_setting": "single",
+  "num_envs": 1,
+  "n_agents_per_env": 4,
+  "predictor": "shortest_path",
+  "malfunction_params": {
+    "malfunction_rate": 0.0025,
+    "min_duration": 15,
+    "max_duration": 50
+  }
+}
